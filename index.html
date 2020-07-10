@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/bulma.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>HBC - HOLDING</title>
+</head>
+<body>
+<header>
+    <div class="contenedor-logo">
+        <img id="logoPrincipal" src="img/hbcblanco.png" alt="logo-hbc" width="105" height="80">
+    </div>
+</header>
+
+<section class="principal pb-5">
+    <div class="columns">
+        <div class="column uno">
+            <div class="column">
+                <h1>TITULAR</h1>
+            </div>
+            <div class="column">
+                <div class="column ml-5">
+                    <h4 class="txt-titular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda
+                        dicta ea est eum,
+                        fuga harum inventore molestiae nesciunt perferendis suscipit temporibus tenetur velit. Ipsa
+                        perferendis perspiciatis qui repudiandae? Tempora!</h4>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="form_main">
+                <form action="sendData" method="post" class="form_content">
+                    <h3 class="txt-persuasivo">TITULO PERSUASIVO</h3>
+                    <br>
+                    <div class="field">
+                        <label for="nombre" class="label">Nombres y apellidos</label>
+                        <div class="control">
+                            <input class="input" name="nombre" id="nombre" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="correo" class="label">Correo</label>
+                        <div class="control">
+                            <input class="input" name="correo" id="correo" type="email" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="celular" class="label">Celular</label>
+                        <div class="control">
+                            <input class="input" name="celular" id="celular" type="number" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control" style="display: block ruby;">
+                            <label class="checkbox">
+                                <input type="checkbox" id="check">
+                            </label>
+                            <a class=" is-link is-large" id="button">Acepto políticas de privacidad</a>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button type="submit" class="form_content__button" id="send">CALL TO ACTION</button>
+                    </div>
+                    <p style="color: red; display:none" id="error">error complete correctamente los campos</p>
+                </form>
+                <div class="modal">
+                    <div class="modal-background">
+
+                    </div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Política de tratamiento <br> de datos personales</p>
+                            <button class="delete" id="cerrar"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            Dando cumplimiento a lo dispuesto en la Ley estatutaria 1581 de 2012 y a su Decreto
+                            Reglamentario 1377 de 2013,
+                            Funerales Los Olivos adopta la presente política para el tratamiento de datos personales, la
+                            cual será informada
+                            a todos los titulares de los datos recolectados o que en el futuro se obtengan en el
+                            ejercicio de las actividades comerciales, culturales o laborales.
+                        </section>
+                        <footer class="modal-card-foot">
+
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-5 pb-6 quienes-somos">
+    <div class="pos-textos">
+        <h3 class="titulo">Quienes somos</h3>
+    </div>
+    <div class="columns pt-5">
+        <div class="column is-half">
+            <div class="column is-half">
+                <div class="cont-imgSomos">
+                    <img id="imgSomos" src="img/img-somos.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="column is-half">
+            <div class="column is-half">
+                <p id="estiloParrafo">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="servicios pt-5 pb-6">
+    <div class="pos-textos">
+        <h3 class="titulo">Servicios</h3>
+    </div>
+    <div class="columns spt-5 pb-5">
+        <div class="column pt-6 secc">
+            <div class="con-slider container column">
+                <div class="slider container">
+                    <ul class="tarjetas">
+                        <li class="ispaced mx-*">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                             alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                     alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="ispaced">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                             alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                     alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ispaced">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                             alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                     alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ispaced">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                             alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                     alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ispaced">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                             alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                     alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ispaced">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                             alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                     alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="pt-5 pb-6 contact">
+    <div class="pos-cont pt-5 pb-5">
+        <img id="imaCont" src="img/ws.png" alt="">
+    </div>
+    <div class="pos-cont pb-5">
+        <p id="txtCon">CONTÁCTANOS</p>
+    </div>
+</section>
+
+<section class="pt-5 pb-6 quienes-somos">
+    <div class="pos-textos">
+        <h3 class="titulo">Nuestro equipo</h3>
+    </div>
+    <div class="columns pt-5">
+        <div class="column is-half">
+            <div class="column is-half">
+                <div class="cont-imgSomos">
+                    <img id="imgEquipo" src="img/img-somos.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="column is-half">
+            <div class="column is-half">
+                <p id="estiloParra">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-5 pb-6 cotizar">
+    <div class="column container is-medium">
+        <div class="container pt-5 pl-6">
+            <button class="button btn-cotizar is-light is-large">Quiero cotizar</button>
+        </div>
+    </div>
+</section>
+
+<section class="testimonios pt-5 pb-6">
+    <div class="pos-textos pb-5">
+        <h3 class="titulo">Testimonios</h3>
+    </div>
+    <div class="container column pt-5">
+
+        <div class="columns">
+            <div class="column is-half posiComen">
+                <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-96x96">
+                            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>John Smith</strong>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+                                feugiat facilisis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="column is-medium">
+                <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-96x96">
+                            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>John Smith</strong>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+                                feugiat facilisis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="columns is-mobile pt-5">
+            <div class="column is-three-fifths is-offset-one-fifth posiComen">
+                <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-96x96">
+                            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>John Smith</strong>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+                                feugiat facilisis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="pt-6 pb-2">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="direccion">
+                    <p>Dirección</p><br>
+                    <p class="textoDir">
+                        Sed ut perspiciatis unde <br>omnis iste natus error sit
+                    </p>
+                </div>
+                <br>
+            </div>
+            <div class="column is-half">
+                <div class="direccion">
+                    <p>Siguenos</p><br>
+                    <ul class="redes">
+                        <li class="tam"><img src="img/fb.png" alt=""></li>
+                        <li class="tam"><img src="img/ig_logo.png" alt=""></li>
+                        <li class="tam"><img src="img/ws.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; color: white;">
+            <p>©2020 Digital Alliance</p>
+        </div>
+    </div>
+</footer>
+
+<script src="carrusel.js"></script>
+</body>
+</html>

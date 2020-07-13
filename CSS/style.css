@@ -15,11 +15,12 @@ header {
 
 #logoPrincipal {
     padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 4px;
 }
 
 .principal {
     background-image: url("../img/fondo.jpg");
+    background-position-x: center;
     background-size: cover;
     width: auto;
     height: auto;
@@ -122,50 +123,8 @@ div .uno .column h1 {
 }
 
 .card {
-    width: 48% !important;
-}
-
-.con-slider {
-    width: auto;
-    overflow: hidden;
-}
-
-.slider {
-    width: auto;
-    margin-left: 0;
-
-}
-
-.ispaced {
-    margin-right: -303px;
-}
-
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 250%;
-
-    animation: cambio 15s infinite;
-}
-
-li {
-    width: 683px;
-}
-
-@keyframes cambio {
-    0% {
-        margin-left: 0;
-    }
-    20% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-    45% {
-        margin-left: -100%;
-    }
+    width: 98% !important;
+    border-radius: 4px;
 }
 
 .contact {
@@ -269,6 +228,6 @@ footer {
     }
 
     .card {
-        width: 48% !important;
+        width: 95% !important;
     }
 }

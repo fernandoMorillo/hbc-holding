@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="CSS/owl.carousel.css">
     <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
     <link rel="stylesheet" href="CSS/bulma.min.css">
@@ -21,25 +22,32 @@
 <section class="principal pb-5 pt-5">
     <div class="columns">
         <div class="column uno">
-            <div class="column">
-                <h1>TITULAR</h1>
+            <div class="column pt-6 pt-4">
+                <h1>ASESORÍA FINANCIERA Y RECUPERACIÓN DE TU VIDA
+                    CREDITICIA AL INSTANTE</h1>
             </div>
             <div class="column">
-                <div class="column ml-5">
-                    <h4 class="txt-titular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda
-                        dicta ea est eum,
-                        fuga harum inventore molestiae nesciunt perferendis suscipit temporibus tenetur velit. Ipsa
-                        perferendis perspiciatis qui repudiandae? Tempora!</h4>
+                <div class="column ml-5 subtexto">
+                    <h4 class="txt-titular2">TE BRINDAMOS UNA ASESORIA INTEGRAL :</h4>
+                </div>
+                <div class="container pt-3">
+                    <ul class="container bulletpoint">
+                        <li>Su caso financiero en manos expertas.</li>
+                        <li class="pt-3">Rapidez para pronta solución de su caso.</li>
+                        <li class="pt-2">Atención personalizada 24 horas vía celular
+                            y Whatsapp.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="column">
+        <div id="formulario" class="column">
             <div class="form_main">
-                <form action="sendData" method="post" class="form_content">
-                    <h3 class="txt-persuasivo">TITULO PERSUASIVO</h3>
+                <form action="sendData.php" method="post" class="form_content">
+                    <h3 class="txt-persuasivo">¡SOLICITE SU ASESORÍA AHORA!</h3>
                     <br>
                     <div class="field">
-                        <label for="nombre" class="label">Nombres y apellidos</label>
+                        <label for="name" class="label">Nombres y apellidos</label>
                         <div class="control">
                             <input class="input" name="nombre" id="nombre" type="text" placeholder="">
                         </div>
@@ -56,7 +64,7 @@
                             <input class="input" name="celular" id="celular" type="number" required placeholder="">
                         </div>
                     </div>
-                    <textarea class="textarea"></textarea>
+                    <textarea class="textarea" name="interes" id="interes" required placeholder="Escriba aquí su interés"></textarea>
                     <div class="field">
                         <div class="control" style="display: block ruby;">
                             <label class="checkbox">
@@ -66,7 +74,7 @@
                         </div>
                     </div>
                     <div class="control">
-                        <button type="submit" class="form_content__button" id="send">CALL TO ACTION</button>
+                        <button type="submit" class="form_content__button" id="send">SOLICITAR UNA ASESORÍA</button>
                     </div>
                     <p style="color: red; display:none" id="error">error complete correctamente los campos</p>
                 </form>
@@ -111,10 +119,9 @@
         </div>
         <div class="column is-half">
             <div class="column is-half">
-                <p id="estiloParrafo">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo.
+                <p id="estiloParrafo">Somos una empresa encargada en diagnosticar y
+                    analizar la vida financiera de nuestros clientes para
+                    ayudarlos a alcanzar sus sueños.
                 </p>
             </div>
         </div>
@@ -123,7 +130,7 @@
 
 <section class="servicios pt-5 pb-6">
     <div class="pos-textos">
-        <h3 class="titulo">Servicios</h3>
+        <h3 class="titulo">¡Conoce nuestros servicios!</h3>
     </div>
     <div class="columns spt-5 pb-5">
         <div class="column container pt-6 secc">
@@ -132,21 +139,16 @@
                     <div class="card container">
                         <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                     alt="Placeholder image">
+                                <img src="img/RECUPERACION.jpg"
+                                     alt="imagen recuperación crediticia">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                             alt="Placeholder image">
-                                    </figure>
-                                </div>
                                 <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
+                                    <p class="title is-4">RECUPERACIÓN DE VIDA
+                                        CREDITICIA</p>
+
                                 </div>
                             </div>
 
@@ -155,7 +157,113 @@
                                 Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                                 <a href="#">#css</a> <a href="#">#responsive</a>
                                 <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card container">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/CREACIÓN.jpg"
+                                     alt="imagen creación de vida crediticia">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">CREACIÓN Y ADMINISTRACIÓN DE VIDA CREDITICIA
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                <a href="#">#css</a> <a href="#">#responsive</a>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card container">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/INCLUSIÓN.jpg"
+                                     alt="imagen inclusión de bancarización">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">INCLUSIÓN DE BANCARIZACIÓN
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                <a href="#">#css</a> <a href="#">#responsive</a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card container">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/RECUPERACIÓN%20ELBUENNOMBRE.jpg"
+                                     alt="imagen recuperación del buen nombre">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">
+                                        RECUPERACIÓN DEL BUEN NOMBRE COMERCIAL EN PERSONA NATURAL Y JURÍDICA
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                <a href="#">#css</a> <a href="#">#responsive</a>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card container">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/DEPURACIÓN.jpg"
+                                     alt="imagen depuración de deudas financieras">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">
+                                        DEPURACIÓN DE DEUDAS FINANCIERAS PARA PAZ Y SALVO
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                <a href="#">#css</a> <a href="#">#responsive</a>
+                                <br>
+
                             </div>
                         </div>
                     </div>
@@ -170,15 +278,8 @@
                         </div>
                         <div class="card-content">
                             <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                             alt="Placeholder image">
-                                    </figure>
-                                </div>
                                 <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
+                                    <p class="title is-4">Servicio #6</p>
                                 </div>
                             </div>
 
@@ -187,7 +288,6 @@
                                 Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                                 <a href="#">#css</a> <a href="#">#responsive</a>
                                 <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
                             </div>
                         </div>
                     </div>
@@ -202,15 +302,8 @@
                         </div>
                         <div class="card-content">
                             <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                             alt="Placeholder image">
-                                    </figure>
-                                </div>
                                 <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
+                                    <p class="title is-4">Servicio #7</p>
                                 </div>
                             </div>
 
@@ -219,135 +312,7 @@
                                 Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                                 <a href="#">#css</a> <a href="#">#responsive</a>
                                 <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card container">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                     alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                             alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
 
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card container">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                     alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                             alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card container">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                     alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                             alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card container">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                     alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                             alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
                             </div>
                         </div>
                     </div>
@@ -361,10 +326,14 @@
 
 <section class="pt-5 pb-6 contact">
     <div class="pos-cont pt-5 pb-5">
-        <img id="imaCont" src="img/ws.png" alt="">
+        <img id="imaCont" src="img/WHATSAPP.png" alt="logo de whatsApp">
     </div>
-    <div class="pos-cont pb-5">
-        <p id="txtCon">CONTÁCTANOS</p>
+    <div style="color: white" class="pb-2">
+        <p class="pos-cont">¿PROBLEMAS FINANCIEROS? ¡LO SOLUCIONAMOS!</p>
+    </div>
+    <div class="pos-cont is-half pb-5"><a href="https://wa.link/o8c42a" target="_blank">
+            <button id="txtCon" class="button btncontac is-info is-inverted">CONTÁCTANOS</button>
+        </a>
     </div>
 </section>
 
@@ -376,7 +345,7 @@
         <div class="column is-half">
             <div class="column is-half">
                 <div class="cont-imgSomos">
-                    <img id="imgEquipo" src="img/img-somos.png" alt="">
+                    <img id="imgEquipo" src="img/nosotros.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -392,14 +361,6 @@
     </div>
 </section>
 
-<section class="pt-5 pb-6 cotizar">
-    <div class="column container is-medium">
-        <div class="container pt-5 pl-6">
-            <button class="button btn-cotizar is-light is-large">Quiero cotizar</button>
-        </div>
-    </div>
-</section>
-
 <section class="testimonios pt-5 pb-6">
     <div class="pos-textos pb-5">
         <h3 class="titulo">Testimonios</h3>
@@ -411,7 +372,7 @@
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-96x96">
-                            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            <img class="is-rounded" src="img/PERFIL2.jpg">
                         </p>
                     </figure>
                     <div class="media-content">
@@ -431,7 +392,7 @@
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-96x96">
-                            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            <img class="is-rounded" src="img/PERFIL.jpg">
                         </p>
                     </figure>
                     <div class="media-content">
@@ -453,7 +414,7 @@
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-96x96">
-                            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            <img class="is-rounded" src="img/PERFIL3.jpg">
                         </p>
                     </figure>
                     <div class="media-content">
@@ -472,6 +433,19 @@
         </div>
     </div>
 </section>
+
+<section class="pt-5 pb-6 cotizar">
+    <div class="column container is-medium">
+        <p class="asesoramos">TE ASESORAMOS Y ACOMPAÑAMOS EN TODO TU PROCESO FINANCIERO
+            DE MANERA INTEGRAL</p>
+        <div style="text-align: center" class="container pt-3">
+            <a href="#formulario">
+                <button class="button btn-cotizar is-light is-large">SOLICITAR MI ASESORIA</button>
+            </a>
+        </div>
+    </div>
+</section>
+
 <footer class="pt-6 pb-2">
     <div class="container">
         <div class="columns">
@@ -479,8 +453,7 @@
                 <div class="direccion">
                     <p>Dirección</p><br>
                     <p class="textoDir">
-                        Sed ut perspiciatis unde <br>omnis iste natus error sit
-                    </p>
+                        Barrio Biffi Diag. 31 <br> N°. 71-57 Oficina 203 </p>
                 </div>
                 <br>
             </div>
@@ -488,9 +461,12 @@
                 <div class="direccion">
                     <p>Siguenos</p><br>
                     <ul class="redes">
-                        <li class="tam"><img src="img/fb.png" alt=""></li>
-                        <li class="tam"><img src="img/ig_logo.png" alt=""></li>
-                        <li class="tam"><img src="img/ws.png" alt=""></li>
+                        <li class="tam"><a href="https://www.facebook.com/HBC-holding-GROUP-SAS-644227945997225/"
+                                           target="_blank"><img src="img/fb.png" alt=""></a></li>
+                        <li class="tam"><a href="https://instagram.com/hbcholdinggroup?igshid=dn1r90d7145m"
+                                           target="_blank"><img src="img/ig_logo.png" alt=""></a></li>
+                        <li class="tam"><a href="https://wa.link/o8c42a" target="_blank"><img src="img/ws.png"
+                                                                                              alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -505,5 +481,6 @@
 <script src="Js/jquery.min.js"></script>
 <script src="Js/owl.carousel.min.js"></script>
 <script src="Js/carrusel.js"></script>
+<script src="Js/validation.js"></script>
 </body>
 </html>

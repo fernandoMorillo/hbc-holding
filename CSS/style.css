@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
 }
-
 
 header {
     background-color: #012944;
@@ -13,7 +13,7 @@ header {
     text-align: center;
 }
 
-#logoPrincipal {
+.logoPrincipal {
     padding-top: 10px;
     padding-bottom: 4px;
 }
@@ -31,7 +31,7 @@ header {
 }
 
 div .uno .column h1 {
-    font-size: 34px;
+    font-size: 30px;
     text-align: -moz-center;
     color: white;
 }
@@ -43,7 +43,6 @@ div .uno .column h1 {
 
 .txt-titular2 {
     color: white;
-    text-align: center;
     font-size: 20px;
 }
 
@@ -54,7 +53,7 @@ div .uno .column h1 {
 }
 
 .subtexto {
-    width: 81%;
+    width: 100%;
 }
 
 .bulletpoint {
@@ -106,7 +105,7 @@ div .uno .column h1 {
 
 .pos-textos {
     text-align: center;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .titulo::after {
@@ -120,9 +119,7 @@ div .uno .column h1 {
 
 .cont-imgSomos {
     width: 100%;
-    text-align: center;
-    margin-left: 245px;
-
+    text-align: end;
 }
 
 #imgSomos {
@@ -154,6 +151,22 @@ div .uno .column h1 {
 
 .owl-prev {
     padding-right: 34px !important;
+}
+
+.butCot {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #8094a1;
+    height: 40px;
+    font-size: 19px;
+    border-color: #8094a1;
+    color: white;
+}
+
+.butCot:hover {
+    background-color: #012944;
+    color: white;
+    border-color: transparent;
 }
 
 .contact {
@@ -212,11 +225,13 @@ div .uno .column h1 {
     background-attachment: fixed;
     background-repeat: round;
 }
-.asesoramos{
+
+.asesoramos {
     text-align: center;
     color: white;
     font-size: 21px;
 }
+
 .btn-cotizar {
     width: auto;
     border-radius: 5px !important;
@@ -271,16 +286,19 @@ footer {
     .form_content {
         width: 86%;
     }
-
-    .cont-imgSomos {
-        margin-left: 0;
+    .principal {
+        background-image: url("../img/responsive.png");
     }
-
+    .cont-imgSomos {
+        text-align: center;
+    }
     .card {
         width: 95% !important;
     }
-
     .bulletpoint {
         width: 69%;
+    }
+    .sizeTerminos {
+        font-size: 0.9rem;
     }
 }

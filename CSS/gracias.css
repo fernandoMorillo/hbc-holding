@@ -1,0 +1,44 @@
+*{
+ margin: 0; padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+header {
+    background-color: #012944;
+    height: 100%;
+}
+
+.contenedor-logo {
+    text-align: center;
+}
+
+.logoGracias {
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+section{
+    background-image: url("../img/hbc.png");
+    background-size: cover;
+    height: 100vh;
+}
+.textoGracias {
+    font-size: 37px;
+    text-align: center;
+    color: white;
+    padding-top: 9%;
+}
+.redes {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    section{
+        background-image: url("../img/hbc1.png");
+        height: 100%;
+    }
+    .textoGracias {
+        font-size: 26px;
+    }
+}

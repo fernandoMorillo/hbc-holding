@@ -10,30 +10,32 @@
     <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
     <link rel="stylesheet" href="CSS/bulma.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
     <title>HBC - HOLDING</title>
 </head>
 <body>
 <header>
     <div class="contenedor-logo">
-        <img id="logoPrincipal" src="img/hbcnormal.png" alt="logo-hbc" width="105" height="80">
+        <img class="logoPrincipal" src="img/hbcnormal.png" alt="logo-hbc" width="105" height="80">
     </div>
 </header>
 
 <section class="principal pb-5 pt-5">
     <div class="columns">
         <div class="column uno">
-            <div class="column pt-6 pt-4">
-                <h1>ASESORÍA FINANCIERA Y RECUPERACIÓN DE TU VIDA
+            <div class="column pt-6">
+                <h1>ASESORÍA FINANCIERA Y RECUPERACIÓN DE VIDA
                     CREDITICIA AL INSTANTE</h1>
             </div>
             <div class="column">
                 <div class="column ml-5 subtexto">
-                    <h4 class="txt-titular2">TE BRINDAMOS UNA ASESORIA INTEGRAL :</h4>
+                    <h4 class="txt-titular2">DE LA MANO DE NUESTROS ASESORES JURIDICOS Y FINANCIEROS
+                    TE BRINDAMOS UNA ASESORIA INTEGRAL :</h4>
                 </div>
                 <div class="container pt-3">
                     <ul class="container bulletpoint">
-                        <li>Su caso financiero en manos expertas.</li>
-                        <li class="pt-3">Rapidez para pronta solución de su caso.</li>
+                        <li>Ajustamos tu presupuesto y te diseñamos un plan financiero.</li>
+                        <li class="pt-3">Rapidez para pronta solución de tu caso.</li>
                         <li class="pt-2">Atención personalizada 24 horas vía celular
                             y Whatsapp.
                         </li>
@@ -49,7 +51,7 @@
                     <div class="field">
                         <label for="name" class="label">Nombres y apellidos</label>
                         <div class="control">
-                            <input class="input" name="nombre" id="nombre" type="text" placeholder="">
+                            <input class="input" name="nombre" onkeypress="return soloLetras(event)"  id="nombre" type="text" placeholder="">
                         </div>
                     </div>
                     <div class="field">
@@ -61,16 +63,17 @@
                     <div class="field">
                         <label for="celular" class="label">Celular</label>
                         <div class="control">
-                            <input class="input" name="celular" id="celular" type="number" required placeholder="">
+                            <input class="input" name="celular" onkeypress="return soloNumeros(event)"  id="celular" type="number" required placeholder="">
                         </div>
                     </div>
-                    <textarea class="textarea" name="interes" id="interes" required placeholder="Escriba aquí su interés"></textarea>
+                    <textarea class="textarea" name="interes" id="interes" required
+                              placeholder="Escriba aquí su interés"></textarea>
                     <div class="field">
                         <div class="control" style="display: block ruby;">
                             <label class="checkbox">
                                 <input type="checkbox" id="check">
                             </label>
-                            <a class=" is-link is-large" id="button">Acepto políticas de privacidad</a>
+                            <a class="sizeTerminos is-link is-large" id="button">Acepto términos y condiciones</a>
                         </div>
                     </div>
                     <div class="control">
@@ -111,15 +114,15 @@
     </div>
     <div class="columns pt-5">
         <div class="column is-half">
-            <div class="column is-half">
+            <div class="column">
                 <div class="cont-imgSomos">
-                    <img id="imgSomos" src="img/img-somos.png" alt="">
+                    <img id="imgSomos" src="img/img-somos.png" alt="imagen quienes somos">
                 </div>
             </div>
         </div>
         <div class="column is-half">
             <div class="column is-half">
-                <p id="estiloParrafo">Somos una empresa encargada en diagnosticar y
+                <p id="estiloParrafo" class="pt-5">Somos una empresa encargada en diagnosticar y
                     analizar la vida financiera de nuestros clientes para
                     ayudarlos a alcanzar sus sueños.
                 </p>
@@ -135,6 +138,37 @@
     <div class="columns spt-5 pb-5">
         <div class="column container pt-6 secc">
             <div class="owl-carousel">
+            <div class="item">
+                    <div class="card container">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/CELULAR-A-CREDITO.png"
+                                     alt="Celulares a crédito">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">
+                                        CELULARES A CRÉDITO
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p>Si estas reportado en <em>DATACREDITO</em> y necesitas un telefono, 
+                                nosotros te podemos ayudar a que adquieras ese celular <em> "solo referencias Samsung"</em>
+                                te financiamos hasta 6 meses, solo con tu cédula, dirección y correo electrónico.
+                            </p>
+                                <a href="#formulario">
+                                    <button class="is-success butCot is-fullwidth is-outlined">COTIZAR</button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="item">
                     <div class="card container">
                         <div class="card-image">
@@ -153,11 +187,11 @@
                             </div>
 
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-
+                                <p>Si te encuentras reportado en las centrales de riesgo,
+                                    te ayudamos a eliminar los castigos para que puedas limpiar tu vida crediticia. </p>
+                                <a href="#formulario">
+                                    <button class="is-success butCot is-fullwidth is-outlined">COTIZAR</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -179,11 +213,11 @@
                             </div>
 
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-
+                                <p>Si no tienes vida crediticia te asesoramos para que comiences a
+                                    adquirirla a través de créditos</p>
+                                <a href="#formulario">
+                                    <button class="is-success butCot is-fullwidth is-outlined">COTIZAR</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -205,10 +239,16 @@
                             </div>
 
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
+
+                                <ul>
+                                    <li>Te ayudamos a gestionar créditos de libre inversión.</li>
+                                    <li>Te ayudamos a gestionar créditos hipotecarios.</li>
+                                    <li>Te ayudamos a gestionar créditos vehicular.</li>
+                                </ul>
+
+                                <a href="#formulario">
+                                    <button class="is-success butCot is-fullwidth is-outlined">COTIZAR</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -225,16 +265,17 @@
                             <div class="media">
                                 <div class="media-content">
                                     <p class="title is-4">
-                                        RECUPERACIÓN DEL BUEN NOMBRE COMERCIAL EN PERSONA NATURAL Y JURÍDICA
+                                        AUMENTO DE  PUNTAJE EN DATACREDITO
                                     </p>
                                 </div>
                             </div>
 
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
+                                <p>Para que puedas tener un buen puntaje en las centrales de riesgo,
+                                    lo importante es mantenerla con reportes positivos, pagar tus obligaciones puntuales. </p>
+                                <a href="#formulario">
+                                    <button class="is-success butCot is-fullwidth is-outlined">COTIZAR</button>
+                                </a>
 
                             </div>
                         </div>
@@ -252,17 +293,18 @@
                             <div class="media">
                                 <div class="media-content">
                                     <p class="title is-4">
-                                        DEPURACIÓN DE DEUDAS FINANCIERAS PARA PAZ Y SALVO
+                                        VIDA CREDITICIA
                                     </p>
 
                                 </div>
                             </div>
 
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
+                                <p>Es el comportamiento que usted ha tenido cuando adquiere obligaciones financieras,
+                                    para que así las entidades puedan evaluar el comportamiento que ha tenido al adquirir un crédito. </p>
+                                <a href="#formulario">
+                                    <button class="is-success butCot is-fullwidth is-outlined">COTIZAR</button>
+                                </a>
 
                             </div>
                         </div>
@@ -272,46 +314,28 @@
                     <div class="card container">
                         <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                     alt="Placeholder image">
+                                <img src="img/DEPURACIÓN.jpg"
+                                     alt="imagen depuración de deudas financieras">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4">Servicio #6</p>
+                                    <p class="title is-4">
+                                        ELECTRÓDOMESTICOS A CRÉDITO
+                                    </p>
+
                                 </div>
                             </div>
 
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card container">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                     alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4">Servicio #7</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
+                                <p>Si estas reportado en <em>las centrales de riesgo</em> y necesitas un electródomestico, 
+                                nosotros te podemos ayudar a que lo adquieras  <em> "cualquier referencia".</em>
+                                
+                            </p>
+                                <a href="#formulario">
+                                    <button class="is-success butCot is-fullwidth is-outlined">COTIZAR</button>
+                                </a>
 
                             </div>
                         </div>
@@ -343,18 +367,18 @@
     </div>
     <div class="columns pt-5">
         <div class="column is-half">
-            <div class="column is-half">
+            <div class="column">
                 <div class="cont-imgSomos">
-                    <img id="imgEquipo" src="img/nosotros.jpg" alt="">
+                    <img id="imgEquipo" src="img/nosotros.jpg" alt="Nuestro equipo">
                 </div>
             </div>
         </div>
         <div class="column is-half">
             <div class="column is-half">
-                <p id="estiloParra">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo.
+                <p id="estiloParra">Nuestro equipo está conformado por un grupo de consultores y asesores integrales,
+                    especializados en el área jurídica y financiera.
+                    Quienes te brindarán un respaldo completo en todo el proceso de tu caso ayudándote a liberar cargas
+                    financieras.
                 </p>
             </div>
         </div>
@@ -372,7 +396,7 @@
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-96x96">
-                            <img class="is-rounded" src="img/PERFIL2.jpg">
+                            <img class="is-rounded" src="img/PERFIL2.jpg" alt="imagen de perfil">
                         </p>
                     </figure>
                     <div class="media-content">
@@ -392,7 +416,7 @@
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-96x96">
-                            <img class="is-rounded" src="img/PERFIL.jpg">
+                            <img class="is-rounded" src="img/PERFIL.jpg" alt="imagen de perfil">
                         </p>
                     </figure>
                     <div class="media-content">
@@ -414,7 +438,7 @@
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-96x96">
-                            <img class="is-rounded" src="img/PERFIL3.jpg">
+                            <img class="is-rounded" src="img/PERFIL3.jpg" alt="imagen de perfil">
                         </p>
                     </figure>
                     <div class="media-content">
@@ -459,11 +483,11 @@
             </div>
             <div class="column is-half">
                 <div class="direccion">
-                    <p>Siguenos</p><br>
+                    <p>Síguenos</p><br>
                     <ul class="redes">
-                        <li class="tam"><a href="https://www.facebook.com/HBC-holding-GROUP-SAS-644227945997225/"
+                        <li class="tam"><a href="https://web.facebook.com/HBCHOLDINGG/"
                                            target="_blank"><img src="img/fb.png" alt=""></a></li>
-                        <li class="tam"><a href="https://instagram.com/hbcholdinggroup?igshid=dn1r90d7145m"
+                        <li class="tam"><a href="https://www.instagram.com/hbc_holding/"
                                            target="_blank"><img src="img/ig_logo.png" alt=""></a></li>
                         <li class="tam"><a href="https://wa.link/o8c42a" target="_blank"><img src="img/ws.png"
                                                                                               alt=""></a></li>
@@ -472,7 +496,7 @@
             </div>
         </div>
         <div style="text-align: center; color: white;">
-            <p>©2020 Digital Alliance</p>
+            <p>©2020 <a style="color:white" href="https://www.digitalalliance.com.co/">Digital Alliance</a></p>
         </div>
     </div>
 </footer>
